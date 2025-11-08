@@ -4,7 +4,7 @@ let currentCategory = 'all';
 
 async function fetchBooksAndInitialize() {
     try {
-        const response = await fetch('books.json');
+        const response = await fetch('frontend proj/books.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
